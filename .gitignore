@@ -1,0 +1,24 @@
+.DS_Store
+node_modules/
+plugins/
+platforms/
+bower_components/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
+package-lock.json
+build/
+www
+ul_web_hooks/android/android_web_hook.html
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+

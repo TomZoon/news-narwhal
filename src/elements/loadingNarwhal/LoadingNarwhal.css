@@ -1,0 +1,92 @@
+.loadingNarwhal, .loadingText {
+	--loaderHeight: 100px;
+	--loaderWidth: 240px;
+	--iconSize: 60px;
+	--animationDuration: 4000ms;
+	--opacityText: 0.5;
+
+	height: var(--loaderHeight);
+	width: var(--loaderWidth);
+	color: var(--black);
+	text-align: center;
+	line-height: 32px;
+	padding: 0 0 calc(0.25 * var(--iconSize)) 0;
+	justify-content: space-between;
+}
+
+.loadingText {
+	font-size: var(--font-size-2);
+	color: #13030360;
+}
+
+.relativeContainer {
+	position: relative;
+}
+
+.narwhalOutline {
+	top: calc(-1 * var(--loaderHeight) - 0.25 * var(--iconSize));
+	left: calc(0.5 * var(--loaderWidth) - 0.5 * var(--iconSize));
+	position: absolute;
+	opacity: 0.2;
+	color: var(--blue-background);
+	height: var(--iconSize);
+	width: var(--iconSize);
+}
+
+.narwhalOutline {
+	--animWidth: calc((var(--loaderWidth) - var(--iconSize)) / 2);
+	--animHeight: calc((var(--loaderHeight) - var(--iconSize)) / 2);
+
+	margin-top: calc(var(--animHeight) + 0.2 * var(--iconSize));
+	animation: slide var(--animationDuration) linear infinite;
+}
+
+.loaderDot0, .loaderDot1, .loaderDot2 {
+	opacity: 0;
+
+}
+.loaderDot0 {
+	animation: dot0 var(--animationDuration) linear infinite;
+}
+
+.loaderDot1 {
+	animation: dot1 var(--animationDuration) linear infinite;
+}
+
+.loaderDot2 {
+	animation: dot2 var(--animationDuration) linear infinite;
+}
+
+@keyframes slide {
+	from { transform: translate3d(0, 0, 0); }
+	10% { transform: translate3d(calc(var(--animWidth) / 2), calc(-1 * var(--animHeight)), 0); }
+	20% { transform: translate3d(var(--animWidth), 0, 0); }
+	30% { transform: translate3d(calc(var(--animWidth) / 2), calc(var(--animHeight)), 0) scaleX(-1);}
+	40% { transform: translate3d(0, 0, 0) scaleX(-1); }
+	50% { transform: translate3d(calc(-1 * var(--animWidth) / 2), calc(-1 * var(--animHeight)), 0) scaleX(-1);; }
+	60% { transform: translate3d(calc(-1 * var(--animWidth)), 0, 0) scaleX(-1); }
+	70% { transform: translate3d(calc(-1 * var(--animWidth) / 2), calc(var(--animHeight)), 0); }
+	80% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes dot0 {
+	from { opacity: 0 }
+	20% { opacity: var(--opacityText) }
+	60% { opacity: var(--opacityText) }
+	80% { opacity: 0 }
+}
+
+@keyframes dot1 {
+	from { opacity: 0 }
+	20% { opacity: 0 }
+	40% { opacity: var(--opacityText) }
+	60% { opacity: var(--opacityText) }
+	80% { opacity: 0 }
+}
+
+@keyframes dot2 {
+	from { opacity: 0 }
+	40% { opacity: 0 }
+	60% { opacity: var(--opacityText) }
+	80% { opacity: 0 }
+}

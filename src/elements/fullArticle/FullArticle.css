@@ -1,0 +1,49 @@
+.fullArticle {
+	--navbar-height: 56px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px 16px 8px 24px;
+	text-align: left;
+}
+
+.fullArticle > img {
+	max-width: 400px;
+	width: 50%;
+	min-width: 200px;
+	max-height: 400px;
+	margin: 0 24px 16px 0;
+	float: left;
+}
+
+.topBar {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	line-height: 32px;
+	color: var(--black);
+	opacity: 0.8;
+}
+
+h2 {
+	margin: 12px 0 24px 0;
+}
+
+.fullArticle > .description {
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.dot {
+	opacity: 0.5;
+	line-height: 28px;
+	margin: 0 8px 4px 8px;
+}
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}

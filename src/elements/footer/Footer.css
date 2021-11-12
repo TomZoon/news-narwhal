@@ -1,0 +1,11 @@
+.footer {
+	width: 100%;
+	color: var(--black);
+	background-color: var(--blue-background);
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 32px;
+	padding: 0;
+	justify-content: space-between;
+	border-top: 2px solid var(--blue-border);
+}
