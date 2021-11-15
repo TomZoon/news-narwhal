@@ -34,6 +34,8 @@
 	min-width: var(--img-width);
 	height: var(--img-height);
 	opacity: 0.75;
+	border-radius: var(--border-radius);
+	background-color: #f2f2f2;
 }
 
 .imgPlaceholder > img {

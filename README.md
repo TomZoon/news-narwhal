@@ -5,16 +5,14 @@ A newsreader app made for an assignment using the news API from newsapi.org.
 News Narwhal was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Goal
-The goal is to make a newsreader. I'm better at the other Frameworks (Polymer/Vue), but I've chosen to use React 
-to show my React skills. This is also why I've also chosen to make all the React elements myself. 
-Making use of the basic html elements. 
-
+The goal is to make a newsreader in React. I will be making all the React elements myself. Making use of the basic html elements. 
 The newsreader will (hopefully) be fully responsive. From mobile to desktop views.
 I also wanted to make sure that you could link articles/sections to other people with the url.
 
 ## Design
-I chose an animal that started with the N for the name and an accompanying icon with some colors for the color scheme. 
-I'm not a very good visual designer, but this works. I chose a font that works well in big blobs of texts (Roboto).
+I chose an animal that started with the N for the name and an accompanying icon(Thanks Freepik from www.flaticon.com) 
+with some colors for the color scheme. I'm not a very good visual designer, but this works. I chose a font that
+works well in big blobs of texts (Roboto).
 
 ### UX
 * **Drawer** - For the subject sections. My original plan was that you could add/remove your own sections. 
