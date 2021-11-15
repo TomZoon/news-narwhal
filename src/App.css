@@ -1,3 +1,61 @@
+:root {
+	--font-family: 'Roboto', sans-serif;
+	--font-family-bold: 'RobotoBold', sans-serif;
+
+	--color-main: #0D0C43;
+	--color-cta: #00B2C8;
+
+	color: var(--color-main);
+
+	--blue-background: #8ed8e3;
+	--blue-border: #52CBCE75;
+	--blue-main: #3EADAD;
+	--blue-light: #52CBCE;
+	--yellow-dark: #E0BE70;
+	--yellow-main: #F9D780;
+	--yellow-light: #F9E9C7;
+	--black: #130303;
+
+	--border-radius: 4px;
+
+	--font-size-0: 14px;
+	--font-size-1: 16px;
+	--font-size-2: 18px;
+	--font-size-3: 21px;
+	--font-size-4: 24px;
+	--font-size-5: 32px;
+	--font-size-6: 40px;
+	--font-size-7: 48px;
+
+	--font-color-ligth: #7A7998;
+	--font-grey: #757575;
+
+	--content-width-max: 1400px;
+	--content-width-min: 340px;
+
+	--drawer-width: 200px;
+	--drawer-height: 280px;
+	--header-height: 48px;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'), url(./Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoBold';
+	src: local('RobotoBold'), url(./Roboto-Bold.ttf) format('truetype');
+}
+
+body {
+	margin: 0;
+	font-family: var(--font-family);
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 #root {
 	text-align: center;
 	color: black;
@@ -5,46 +63,17 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	min-height: 100vh;
-	max-width: 1400px;
 	width: 100%;
 	margin: auto;
 }
 
 .pageContent {
 	flex-grow: 1;
+	width: 100%;
+	max-width: var(--content-width-max);
+	margin: 44px auto 12px auto;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+button {
+	cursor: pointer;
 }

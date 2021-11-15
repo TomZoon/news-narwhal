@@ -1,0 +1,31 @@
+.articleContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.articleCardLink {
+	text-decoration: none;
+}
+
+.subjectHeader {
+	width: 100%;
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.subjectHeader {
+		display: block;
+		text-align: left;
+		margin: 8px 0 0 4px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.errorLoadContainer {
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -2,8 +2,8 @@
 	--loaderHeight: 100px;
 	--loaderWidth: 240px;
 	--iconSize: 60px;
-	--animationDuration: 4000ms;
-	--opacityText: 0.5;
+	--animationDuration: 3000ms;
+	--opacityText: 0.7;
 
 	height: var(--loaderHeight);
 	width: var(--loaderWidth);
@@ -43,6 +43,8 @@
 
 .loaderDot0, .loaderDot1, .loaderDot2 {
 	opacity: 0;
+	font-weight: 600;
+	font-size: 22px;
 
 }
 .loaderDot0 {

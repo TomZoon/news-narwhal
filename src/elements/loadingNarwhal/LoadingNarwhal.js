@@ -13,7 +13,7 @@ function LoadingNarwhal() {
 				<span className="loaderDot2">.</span>
 			</div>
 			<div className='relativeContainer'>
-				<img className="narwhalOutline" src={ narwhalOutline }/>
+				<img alt="Narwhal loader" className="narwhalOutline" src={ narwhalOutline }/>
 			</div>
 		</div>
 	);

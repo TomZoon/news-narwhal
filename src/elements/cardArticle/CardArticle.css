@@ -1,24 +1,96 @@
 .cardArticle {
-	--navbar-height: 56px;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	box-sizing: border-box;
 	padding: 0;
-	margin: auto;
+	margin: 12px 0 4px 16px;
+	width: calc((100vw - var(--drawer-width)) / 2 - 44px);
+	max-width: calc((var(--content-width-max) - var(--drawer-width)) / 2 - 44px);
+	min-width: calc(var(--content-width-min) - 16px);
+	--img-height: 150px;
+	--img-width: 225px;
 }
 
 .cardArticle > img {
-	width: 240px;
-	height: 160px;
+	min-width: var(--img-width);
+	max-width: var(--img-width);
+	height: var(--img-height);
+	border-radius: 4px;
 	object-fit: cover;
 }
 
-
-@media screen and (max-width: 1080px) {
-
+.textContainer {
+	text-decoration: none;
+	text-align: left;
+	padding: 0 0 0 14px;
+	box-sizing: border-box;
+	height: var(--img-height);
 }
 
-@media screen and (max-width: 768px) {
+.imgPlaceholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: var(--img-width);
+	height: var(--img-height);
+	opacity: 0.75;
+}
 
+.imgPlaceholder > img {
+	height: 125px;
+	width: 125px;
+}
+
+h4, h3 {
+	margin: 0;
+	color: var(--black);
+}
+
+.cardArticleTime {
+	text-decoration: none;
+	color: var(--font-grey);
+	font-weight: 300;
+	margin-bottom: 4px;
+}
+
+.cardArticleTitle {
+	word-wrap: break-word;
+	font-family: var(--font-family-bold);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.cardArticle {
+		margin: 12px 12px 4px 4px;
+		width: calc(100vw / 2 - 34px);
+		max-width: initial;
+		--img-height: 150px;
+		--img-width: 150px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.cardArticle {
+		width: calc(100vw - 44px);
+		margin: 4px 0 12px 0;
+		--img-width: 225px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cardArticle {
+		--img-height: 120px;
+		--img-width: 120px;
+	}
+
+	.cardArticleTitle {
+		-webkit-line-clamp: 4;
+		line-clamp: 4;
+	}
 }
